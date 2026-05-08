@@ -85,7 +85,6 @@ export default function Home() {
         </div>
 
         <div className="visual">
-
           <div className="visualOverlay"></div>
 
           <div className="visualTop">
@@ -93,27 +92,23 @@ export default function Home() {
             <span>2026</span>
           </div>
 
-          <div className="heroLines"></div>
+          <div className="courtFrame">
+            <div className="courtVertical"></div>
+            <div className="courtHorizontal"></div>
 
-          <div className="floatingCard topCard">
-            <span>INFRASTRUCTURE</span>
+            <div className="floatingCard topCard">
+              <span>INFRASTRUCTURE</span>
+            </div>
+
+            <div className="floatingCard bottomCard">
+              <span>CLUB DEVELOPMENT</span>
+            </div>
+
+            <div className="badge">
+              <b>PADEL GROUP</b>
+              <span>Courts • Clubs • Community</span>
+            </div>
           </div>
-
-          <div className="floatingCard bottomCard">
-            <span>CLUB DEVELOPMENT</span>
-          </div>
-
-          <div className="centerGlow"></div>
-
-          <div className="pgMassive">
-            PG
-          </div>
-
-          <div className="badge">
-            <b>PADEL GROUP</b>
-            <span>Courts • Clubs • Community</span>
-          </div>
-
         </div>
       </section>
 
@@ -163,12 +158,8 @@ export default function Home() {
         <div className="serviceGrid">
           {services.map((item, index) => (
             <div className="service" key={item.title}>
-              <div className="number">
-                0{index + 1}
-              </div>
-
+              <div className="number">0{index + 1}</div>
               <h3>{item.title}</h3>
-
               <p>{item.text}</p>
             </div>
           ))}
@@ -177,7 +168,6 @@ export default function Home() {
 
       <section id="club" className="section">
         <div className="showcase">
-
           <div className="showcaseVisual">
             PADEL GLDANI
           </div>
@@ -209,7 +199,6 @@ export default function Home() {
       <section className="section partner">
         <div className="partnerLight">
           <h2>Fortune Group</h2>
-
           <p>
             Reliable international partnership, quality manufacturing and
             after-sales support.
@@ -218,7 +207,6 @@ export default function Home() {
 
         <div className="partnerDark">
           <h2>PG Standard</h2>
-
           <p>
             Premium design, precise construction, professional lighting and
             operational expertise.
@@ -228,7 +216,6 @@ export default function Home() {
 
       <section id="contact" className="section">
         <div className="contact">
-
           <div>
             <span className="eyebrow">
               Contact
@@ -255,7 +242,6 @@ export default function Home() {
               Tbilisi, Georgia
             </span>
           </div>
-
         </div>
       </section>
 
