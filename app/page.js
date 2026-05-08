@@ -1,19 +1,19 @@
 const services = [
   {
-    title: "კორტების მშენებლობა",
-    text: "Turnkey პადელის კორტები — დიზაინი, კონსტრუქცია, გადახურვა, განათება და მონტაჟი."
+    title: "COURT CONSTRUCTION",
+    text: "Turnkey premium padel court systems — design, structure, roofing, lighting and installation."
   },
   {
-    title: "კლუბების განვითარება",
-    text: "პრემიუმ პადელის კლუბების კონცეფცია, ოპერირება, booking სისტემა და კომერციული განვითარება."
+    title: "CLUB DEVELOPMENT",
+    text: "Concept, operations, booking systems and commercial development for premium padel clubs."
   },
   {
-    title: "აკადემია და ტურნირები",
-    text: "ბავშვთა და ზრდასრულთა ჯგუფები, corporate events, ტურნირები და community."
+    title: "ACADEMY & EVENTS",
+    text: "Training groups, corporate events, tournaments and community-driven padel experiences."
   },
   {
-    title: "პარტნიორობა",
-    text: "საერთაშორისო მომწოდებლები, ინვენტარის მომარაგება და B2B ინფრასტრუქტურული პროექტები."
+    title: "PARTNERSHIPS",
+    text: "International suppliers, equipment sourcing and B2B infrastructure projects."
   }
 ];
 
@@ -25,37 +25,40 @@ export default function Home() {
           <div className="mark">PG</div>
           <div>
             <div className="brandName">Padel Group</div>
-            <div className="brandSub">Georgia</div>
           </div>
         </a>
 
         <nav>
-          <a href="#about">ჩვენ შესახებ</a>
-          <a href="#services">მიმართულებები</a>
-          <a href="#club">Padel Gldani</a>
-          <a href="#contact">კონტაქტი</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#club">Projects</a>
+          <a href="#contact">Contact</a>
         </nav>
 
-        <a className="headerBtn" href="#contact">დაგვიკავშირდით</a>
+        <a className="headerBtn" href="#contact">BUILD WITH US</a>
       </header>
 
       <section className="hero" id="top">
         <div className="heroText">
           <div className="kicker">Courts. Clubs. Community.</div>
-          <h1>ვქმნით პადელის მომავალს საქართველოში</h1>
+          <h1>
+            COURTS.<br />
+            CLUBS.<br />
+            COMMUNITY.
+          </h1>
           <p>
-            Padel Group არის პრემიუმ სპორტული ინფრასტრუქტურის კომპანია,
-            რომელიც ავითარებს პადელის კორტებს, კლუბებს, აკადემიას და
-            საერთაშორისო დონის padel ecosystem-ს საქართველოში.
+            Premium padel infrastructure and club development solutions.
           </p>
+
           <div className="buttons">
-            <a className="btn green" href="#services">ჩვენი მიმართულებები</a>
-            <a className="btn dark" href="#club">Padel Gldani</a>
+            <a className="btn green" href="#contact">BUILD WITH US</a>
+            <a className="btn dark" href="#club">EXPLORE PROJECTS</a>
           </div>
+
           <div className="stats">
-            <div><b>360°</b><span>კორტისა და კლუბის სრული განვითარება</span></div>
-            <div><b>GE</b><span>ქართული პადელის ინფრასტრუქტურა</span></div>
-            <div><b>B2B</b><span>პარტნიორობა და მშენებლობა</span></div>
+            <div><b>360°</b><span>Full club development</span></div>
+            <div><b>GE</b><span>Premium padel infrastructure</span></div>
+            <div><b>B2B</b><span>International partnerships</span></div>
           </div>
         </div>
 
@@ -67,7 +70,7 @@ export default function Home() {
           <div className="court">
             <div className="badge">
               <b>PADEL GROUP</b>
-              <span>კორტები • კლუბები • საზოგადოება</span>
+              <span>Courts • Clubs • Community</span>
             </div>
           </div>
         </div>
@@ -77,11 +80,11 @@ export default function Home() {
         <div className="sectionHead">
           <div>
             <span className="eyebrow">About</span>
-            <h2>მეტი ვიდრე კლუბი</h2>
+            <h2>More than courts.</h2>
           </div>
           <p>
-            ჩვენი მიზანია, პადელი საქართველოში ჩამოყალიბდეს როგორც თანამედროვე,
-            კომერციულად ძლიერი და საზოგადოებაზე ორიენტირებული სპორტული ინფრასტრუქტურა.
+            Padel Group develops premium padel infrastructure, clubs and sports
+            communities with a long-term ecosystem approach.
           </p>
         </div>
 
@@ -89,17 +92,17 @@ export default function Home() {
           <div className="panel big">
             <h3>Brand Position</h3>
             <p>
-              Padel Group აერთიანებს სპორტს, არქიტექტურას და ბიზნეს ოპერირებას.
-              ჩვენ ვქმნით სივრცეებს, სადაც ხარისხიანი ინფრასტრუქტურა, დიზაინი და
-              community ერთ სისტემად მუშაობს.
+              We combine sport, architecture and business operations to create
+              high-performance spaces where infrastructure, design and community
+              work as one system.
             </p>
           </div>
+
           <div className="panel">
             <h3>Mission</h3>
             <p>
-              საქართველოში საერთაშორისო დონის პადელის ეკოსისტემის განვითარება —
-              კორტების მშენებლობით, კლუბების მართვით, მოთამაშეების გაზრდით და
-              ძლიერი პარტნიორული ქსელის შექმნით.
+              To grow the padel ecosystem through world-class infrastructure,
+              innovative design and strong partnerships.
             </p>
           </div>
         </div>
@@ -109,7 +112,7 @@ export default function Home() {
         <div className="sectionHead">
           <div>
             <span className="eyebrow">What we do</span>
-            <h2>მიმართულებები</h2>
+            <h2>Services</h2>
           </div>
         </div>
 
@@ -128,14 +131,20 @@ export default function Home() {
         <div className="showcase">
           <div className="showcaseVisual">PADEL GLDANI</div>
           <div>
-            <span className="eyebrow">Flagship club</span>
+            <span className="eyebrow">Flagship project</span>
             <h2>Padel Gldani</h2>
             <p>
-              Padel Gldani არის ჩვენი მოქმედი კლუბი და Padel Group-ის ეკოსისტემის
-              პრაქტიკული საფუძველი — ადგილი, სადაც ვითარდება მოთამაშეები,
-              ტურნირები, აკადემია და პადელის კულტურა.
+              Padel Gldani is our active flagship club — the practical foundation
+              of the Padel Group ecosystem, where players, tournaments, academy
+              programs and padel culture continue to grow.
             </p>
-            <a className="btn green" href="https://padelgldani.ge/booking/" target="_blank">ჯავშანი</a>
+            <a
+              className="btn green"
+              href="https://padelgldani.ge/booking/"
+              target="_blank"
+            >
+              BOOK A COURT
+            </a>
           </div>
         </div>
       </section>
@@ -143,11 +152,18 @@ export default function Home() {
       <section className="section partner">
         <div className="partnerLight">
           <h2>Fortune Group</h2>
-          <p>სანდო საერთაშორისო პარტნიორობა, ხარისხიანი წარმოება და after-sales მხარდაჭერა.</p>
+          <p>
+            Reliable international partnership, quality manufacturing and
+            after-sales support.
+          </p>
         </div>
+
         <div className="partnerDark">
           <h2>PG Standard</h2>
-          <p>პრემიუმ დიზაინი, გამართული მშენებლობა, სწორი განათება და ოპერაციული გამოცდილება.</p>
+          <p>
+            Premium design, precise construction, professional lighting and
+            operational expertise.
+          </p>
         </div>
       </section>
 
@@ -155,18 +171,24 @@ export default function Home() {
         <div className="contact">
           <div>
             <span className="eyebrow">Contact</span>
-            <h2>ავაშენოთ ერთად</h2>
-            <p>კორტის მშენებლობა, კლუბის განვითარება ან პარტნიორობა — დაგვიკავშირდით.</p>
+            <h2>Build with us.</h2>
+            <p>
+              Court construction, club development or partnership opportunities —
+              contact Padel Group.
+            </p>
           </div>
+
           <div className="contacts">
             <a href="tel:+995593958686">+995 593 958 686</a>
             <a href="mailto:padelgldani@gmail.com">padelgldani@gmail.com</a>
-            <span>თბილისი, საქართველო</span>
+            <span>Tbilisi, Georgia</span>
           </div>
         </div>
       </section>
 
-      <footer>© 2026 Padel Group • Courts. Clubs. Community. • padelgroup.ge</footer>
+      <footer>
+        © 2026 Padel Group • Courts. Clubs. Community. • padelgroup.ge
+      </footer>
     </main>
   );
 }
