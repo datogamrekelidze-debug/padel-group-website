@@ -281,8 +281,8 @@ export default function Home() {
 
           <div className="contacts">
 
-            <a href="tel:+995593958686">
-              +995 593 958 686
+            <a href="tel:+995550050906">
+              +995 550 05 09 06
             </a>
 
             <a href="mailto:padelgldani@gmail.com">
