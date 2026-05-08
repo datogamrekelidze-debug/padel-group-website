@@ -40,7 +40,6 @@ main::before{
   mask-image:radial-gradient(circle at center, black 30%, transparent 90%);
 }
 
-/* HEADER */
 .header{
   position:fixed;
   top:0;
@@ -124,7 +123,6 @@ nav a:hover{color:var(--green)}
 
 .dark:hover{background:rgba(255,255,255,.08)}
 
-/* HERO */
 .hero{
   min-height:100vh;
   display:grid;
@@ -197,7 +195,6 @@ h1{
   color:rgba(255,255,255,.55);
 }
 
-/* HERO VISUAL */
 .visual{
   height:700px;
   border:1px solid rgba(255,255,255,.06);
@@ -242,41 +239,57 @@ h1{
   z-index:2;
 }
 
-.heroLines{
+.visualTop{
+  display:flex;
+  justify-content:space-between;
+  color:rgba(255,255,255,.42);
+  font-size:13px;
+  position:relative;
+  z-index:4;
+}
+
+.courtFrame{
+  position:absolute;
+  inset:90px 30px 30px 30px;
+  border:1px solid rgba(183,255,42,.20);
+  border-radius:32px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at center, rgba(183,255,42,.08), transparent 45%),
+    linear-gradient(180deg,#0d161e 0%,#091118 100%);
+  z-index:3;
+}
+
+.courtFrame::before{
+  content:"";
   position:absolute;
   inset:0;
   background:
-    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
-  background-size:70px 70px;
-  opacity:.55;
-  z-index:2;
+    linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.018) 1px, transparent 1px);
+  background-size:52px 52px;
 }
 
-.pgMassive{
+.courtVertical{
   position:absolute;
-  inset:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:240px;
-  font-weight:900;
-  color:rgba(255,255,255,.04);
-  letter-spacing:-.08em;
-  z-index:2;
-}
-
-.centerGlow{
-  position:absolute;
-  width:340px;
-  height:340px;
-  border-radius:50%;
-  background:rgba(183,255,42,.14);
-  filter:blur(90px);
   left:50%;
+  top:0;
+  width:4px;
+  height:100%;
+  background:rgba(183,255,42,.72);
+  transform:translateX(-50%);
+  box-shadow:0 0 22px rgba(183,255,42,.36);
+}
+
+.courtHorizontal{
+  position:absolute;
+  left:0;
   top:50%;
-  transform:translate(-50%,-50%);
-  z-index:2;
+  width:100%;
+  height:4px;
+  background:rgba(183,255,42,.62);
+  transform:translateY(-50%);
+  box-shadow:0 0 22px rgba(183,255,42,.32);
 }
 
 .floatingCard{
@@ -298,22 +311,13 @@ h1{
 }
 
 .topCard{
-  top:120px;
-  right:40px;
+  top:34px;
+  right:34px;
 }
 
 .bottomCard{
-  bottom:120px;
-  left:40px;
-}
-
-.visualTop{
-  display:flex;
-  justify-content:space-between;
-  color:rgba(255,255,255,.42);
-  font-size:13px;
-  position:relative;
-  z-index:4;
+  bottom:34px;
+  left:34px;
 }
 
 .badge{
@@ -325,7 +329,7 @@ h1{
   border:1px solid rgba(255,255,255,.06);
   border-radius:24px;
   padding:20px;
-  z-index:4;
+  z-index:5;
 }
 
 .badge b{
@@ -339,7 +343,6 @@ h1{
   to{transform:rotate(360deg)}
 }
 
-/* SECTIONS */
 .section{
   max-width:1450px;
   margin:auto;
@@ -502,7 +505,6 @@ footer{
   color:rgba(255,255,255,.4);
 }
 
-/* RESPONSIVE */
 @media(max-width:1100px){
   nav{display:none}
 
@@ -548,8 +550,8 @@ footer{
     height:440px;
   }
 
-  .pgMassive{
-    font-size:120px;
+  .courtFrame{
+    inset:86px 20px 20px 20px;
   }
 
   .floatingCard{
@@ -557,13 +559,13 @@ footer{
   }
 
   .topCard{
-    top:90px;
+    top:24px;
     right:20px;
   }
 
   .bottomCard{
     left:20px;
-    bottom:90px;
+    bottom:24px;
   }
 
   .showcaseVisual{
