@@ -62,24 +62,11 @@ main::before{
   gap:16px;
 }
 
-.mark{
-  width:52px;
-  height:52px;
-  border-radius:18px;
-  background:var(--green);
-  color:#050505;
-  display:grid;
-  place-items:center;
-  font-weight:900;
-  font-size:20px;
-  box-shadow:0 0 35px rgba(183,255,42,.35);
-}
-
-.brandName{
-  text-transform:uppercase;
-  font-size:14px;
-  font-weight:900;
-  letter-spacing:.35em;
+.main-logo{
+  width:130px;
+  height:auto;
+  object-fit:contain;
+  display:block;
 }
 
 nav{
@@ -528,6 +515,10 @@ footer{
 
   .headerBtn{
     display:none;
+  }
+
+  .main-logo{
+    width:110px;
   }
 
   .hero{
