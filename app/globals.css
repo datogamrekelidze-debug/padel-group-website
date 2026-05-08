@@ -7,13 +7,8 @@
   --line:rgba(255,255,255,.08);
 }
 
-*{
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
 
 body{
   margin:0;
@@ -22,14 +17,11 @@ body{
     radial-gradient(circle at bottom left, rgba(183,255,42,.08), transparent 30%),
     linear-gradient(180deg,#061018 0%,#05090d 100%);
   color:var(--white);
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:var(--font-space), Arial, Helvetica, sans-serif;
   overflow-x:hidden;
 }
 
-a{
-  text-decoration:none;
-  color:inherit;
-}
+a{text-decoration:none;color:inherit}
 
 main{
   min-height:100vh;
@@ -48,6 +40,7 @@ main::before{
   mask-image:radial-gradient(circle at center, black 30%, transparent 90%);
 }
 
+/* HEADER */
 .header{
   position:fixed;
   top:0;
@@ -99,16 +92,10 @@ nav{
   text-transform:uppercase;
 }
 
-nav a{
-  transition:.3s ease;
-}
+nav a{transition:.3s ease}
+nav a:hover{color:var(--green)}
 
-nav a:hover{
-  color:var(--green);
-}
-
-.headerBtn,
-.btn{
+.headerBtn,.btn{
   border-radius:999px;
   padding:16px 26px;
   font-weight:800;
@@ -118,15 +105,13 @@ nav a:hover{
   transition:.35s ease;
 }
 
-.headerBtn,
-.green{
+.headerBtn,.green{
   background:var(--green);
   color:#050505;
   box-shadow:0 0 40px rgba(183,255,42,.22);
 }
 
-.headerBtn:hover,
-.green:hover{
+.headerBtn:hover,.green:hover{
   transform:translateY(-2px);
   box-shadow:0 0 60px rgba(183,255,42,.45);
 }
@@ -137,10 +122,9 @@ nav a:hover{
   color:white;
 }
 
-.dark:hover{
-  background:rgba(255,255,255,.08);
-}
+.dark:hover{background:rgba(255,255,255,.08)}
 
+/* HERO */
 .hero{
   min-height:100vh;
   display:grid;
@@ -173,12 +157,7 @@ h1{
   text-transform:uppercase;
 }
 
-.hero p,
-.sectionHead p,
-.panel p,
-.showcase p,
-.partner p,
-.contact p{
+.hero p,.sectionHead p,.panel p,.showcase p,.partner p,.contact p{
   color:var(--muted);
   font-size:18px;
   line-height:1.9;
@@ -218,6 +197,7 @@ h1{
   color:rgba(255,255,255,.55);
 }
 
+/* HERO VISUAL */
 .visual{
   height:700px;
   border:1px solid rgba(255,255,255,.06);
@@ -241,6 +221,90 @@ h1{
     linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px);
   background-size:80px 80px;
+  z-index:1;
+}
+
+.visual::after{
+  content:"";
+  position:absolute;
+  inset:-20%;
+  background:radial-gradient(circle, rgba(183,255,42,.08), transparent 60%);
+  animation:rotateGlow 18s linear infinite;
+  z-index:1;
+}
+
+.visualOverlay{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at center, rgba(183,255,42,.12), transparent 40%),
+    linear-gradient(180deg, transparent 0%, rgba(0,0,0,.35) 100%);
+  z-index:2;
+}
+
+.heroLines{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size:70px 70px;
+  opacity:.55;
+  z-index:2;
+}
+
+.pgMassive{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:240px;
+  font-weight:900;
+  color:rgba(255,255,255,.04);
+  letter-spacing:-.08em;
+  z-index:2;
+}
+
+.centerGlow{
+  position:absolute;
+  width:340px;
+  height:340px;
+  border-radius:50%;
+  background:rgba(183,255,42,.14);
+  filter:blur(90px);
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  z-index:2;
+}
+
+.floatingCard{
+  position:absolute;
+  padding:16px 22px;
+  border-radius:22px;
+  background:rgba(5,10,15,.62);
+  border:1px solid rgba(255,255,255,.06);
+  backdrop-filter:blur(20px);
+  z-index:4;
+  box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+
+.floatingCard span{
+  color:var(--green);
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.16em;
+}
+
+.topCard{
+  top:120px;
+  right:40px;
+}
+
+.bottomCard{
+  bottom:120px;
+  left:40px;
 }
 
 .visualTop{
@@ -249,22 +313,7 @@ h1{
   color:rgba(255,255,255,.42);
   font-size:13px;
   position:relative;
-  z-index:2;
-}
-
-.court{
-  position:absolute;
-  left:30px;
-  right:30px;
-  bottom:30px;
-  top:90px;
-  border-radius:32px;
-  overflow:hidden;
-  border:1px solid rgba(183,255,42,.14);
-  background:
-    linear-gradient(90deg, transparent 49.6%, rgba(183,255,42,.55) 49.6%, rgba(183,255,42,.55) 50.4%, transparent 50.4%),
-    linear-gradient(transparent 49.6%, rgba(183,255,42,.45) 49.6%, rgba(183,255,42,.45) 50.4%, transparent 50.4%),
-    linear-gradient(180deg,#0d161e 0%,#091118 100%);
+  z-index:4;
 }
 
 .badge{
@@ -276,6 +325,7 @@ h1{
   border:1px solid rgba(255,255,255,.06);
   border-radius:24px;
   padding:20px;
+  z-index:4;
 }
 
 .badge b{
@@ -284,6 +334,12 @@ h1{
   margin-bottom:8px;
 }
 
+@keyframes rotateGlow{
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
+}
+
+/* SECTIONS */
 .section{
   max-width:1450px;
   margin:auto;
@@ -320,10 +376,7 @@ h2{
   gap:24px;
 }
 
-.panel,
-.service,
-.contact,
-.showcase{
+.panel,.service,.contact,.showcase{
   border:1px solid rgba(255,255,255,.06);
   border-radius:38px;
   background:rgba(255,255,255,.03);
@@ -403,8 +456,7 @@ h2{
   gap:18px;
 }
 
-.partnerLight,
-.partnerDark{
+.partnerLight,.partnerDark{
   border-radius:38px;
   padding:42px;
 }
@@ -414,9 +466,7 @@ h2{
   color:#050505;
 }
 
-.partnerLight p{
-  color:rgba(0,0,0,.58);
-}
+.partnerLight p{color:rgba(0,0,0,.58)}
 
 .partnerDark{
   background:rgba(255,255,255,.03);
@@ -437,8 +487,7 @@ h2{
   gap:14px;
 }
 
-.contacts a,
-.contacts span{
+.contacts a,.contacts span{
   border:1px solid rgba(255,255,255,.06);
   border-radius:22px;
   padding:18px;
@@ -453,17 +502,11 @@ footer{
   color:rgba(255,255,255,.4);
 }
 
+/* RESPONSIVE */
 @media(max-width:1100px){
+  nav{display:none}
 
-  nav{
-    display:none;
-  }
-
-  .hero,
-  .aboutGrid,
-  .showcase,
-  .partner,
-  .contact{
+  .hero,.aboutGrid,.showcase,.partner,.contact{
     grid-template-columns:1fr;
   }
 
@@ -477,7 +520,6 @@ footer{
 }
 
 @media(max-width:700px){
-
   .header{
     padding:0 20px;
   }
@@ -498,13 +540,30 @@ footer{
     font-size:68px;
   }
 
-  .stats,
-  .serviceGrid{
+  .stats,.serviceGrid{
     grid-template-columns:1fr;
   }
 
   .visual{
     height:440px;
+  }
+
+  .pgMassive{
+    font-size:120px;
+  }
+
+  .floatingCard{
+    padding:12px 16px;
+  }
+
+  .topCard{
+    top:90px;
+    right:20px;
+  }
+
+  .bottomCard{
+    left:20px;
+    bottom:90px;
   }
 
   .showcaseVisual{
