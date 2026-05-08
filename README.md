@@ -1,1 +1,3 @@
-# padel-group-website
+# Padel Group Website
+
+Premium padel infrastructure website built with Next.js.
