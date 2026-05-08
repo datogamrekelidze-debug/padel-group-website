@@ -285,8 +285,8 @@ export default function Home() {
               +995 550 05 09 06
             </a>
 
-            <a href="mailto:padelgldani@gmail.com">
-              padelgldani@gmail.com
+            <a href="mailto:ino@padelgroup.ge">
+              info@padelgroup.ge
             </a>
 
             <span>
