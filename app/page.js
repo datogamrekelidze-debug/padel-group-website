@@ -35,44 +35,85 @@ export default function Home() {
           <a href="#contact">Contact</a>
         </nav>
 
-        <a className="headerBtn" href="#contact">BUILD WITH US</a>
+        <a className="headerBtn" href="#contact">
+          BUILD WITH US
+        </a>
       </header>
 
       <section className="hero" id="top">
         <div className="heroText">
-          <div className="kicker">Courts. Clubs. Community.</div>
+          <div className="kicker">
+            Courts. Clubs. Community.
+          </div>
+
           <h1>
             COURTS.<br />
             CLUBS.<br />
             COMMUNITY.
           </h1>
+
           <p>
             Premium padel infrastructure and club development solutions.
           </p>
 
           <div className="buttons">
-            <a className="btn green" href="#contact">BUILD WITH US</a>
-            <a className="btn dark" href="#club">EXPLORE PROJECTS</a>
+            <a className="btn green" href="#contact">
+              BUILD WITH US
+            </a>
+
+            <a className="btn dark" href="#club">
+              EXPLORE PROJECTS
+            </a>
           </div>
 
           <div className="stats">
-            <div><b>360°</b><span>Full club development</span></div>
-            <div><b>GE</b><span>Premium padel infrastructure</span></div>
-            <div><b>B2B</b><span>International partnerships</span></div>
+            <div>
+              <b>360°</b>
+              <span>Full club development</span>
+            </div>
+
+            <div>
+              <b>GE</b>
+              <span>Premium padel infrastructure</span>
+            </div>
+
+            <div>
+              <b>B2B</b>
+              <span>International partnerships</span>
+            </div>
           </div>
         </div>
 
         <div className="visual">
+
+          <div className="visualOverlay"></div>
+
           <div className="visualTop">
             <span>Premium Padel Infrastructure</span>
             <span>2026</span>
           </div>
-          <div className="court">
-            <div className="badge">
-              <b>PADEL GROUP</b>
-              <span>Courts • Clubs • Community</span>
-            </div>
+
+          <div className="heroLines"></div>
+
+          <div className="floatingCard topCard">
+            <span>INFRASTRUCTURE</span>
           </div>
+
+          <div className="floatingCard bottomCard">
+            <span>CLUB DEVELOPMENT</span>
+          </div>
+
+          <div className="centerGlow"></div>
+
+          <div className="pgMassive">
+            PG
+          </div>
+
+          <div className="badge">
+            <b>PADEL GROUP</b>
+            <span>Courts • Clubs • Community</span>
+          </div>
+
         </div>
       </section>
 
@@ -82,6 +123,7 @@ export default function Home() {
             <span className="eyebrow">About</span>
             <h2>More than courts.</h2>
           </div>
+
           <p>
             Padel Group develops premium padel infrastructure, clubs and sports
             communities with a long-term ecosystem approach.
@@ -91,6 +133,7 @@ export default function Home() {
         <div className="aboutGrid">
           <div className="panel big">
             <h3>Brand Position</h3>
+
             <p>
               We combine sport, architecture and business operations to create
               high-performance spaces where infrastructure, design and community
@@ -100,6 +143,7 @@ export default function Home() {
 
           <div className="panel">
             <h3>Mission</h3>
+
             <p>
               To grow the padel ecosystem through world-class infrastructure,
               innovative design and strong partnerships.
@@ -119,8 +163,12 @@ export default function Home() {
         <div className="serviceGrid">
           {services.map((item, index) => (
             <div className="service" key={item.title}>
-              <div className="number">0{index + 1}</div>
+              <div className="number">
+                0{index + 1}
+              </div>
+
               <h3>{item.title}</h3>
+
               <p>{item.text}</p>
             </div>
           ))}
@@ -129,15 +177,24 @@ export default function Home() {
 
       <section id="club" className="section">
         <div className="showcase">
-          <div className="showcaseVisual">PADEL GLDANI</div>
+
+          <div className="showcaseVisual">
+            PADEL GLDANI
+          </div>
+
           <div>
-            <span className="eyebrow">Flagship project</span>
+            <span className="eyebrow">
+              Flagship project
+            </span>
+
             <h2>Padel Gldani</h2>
+
             <p>
-              Padel Gldani is our active flagship club — the practical foundation
-              of the Padel Group ecosystem, where players, tournaments, academy
-              programs and padel culture continue to grow.
+              Padel Gldani is our active flagship club — the practical
+              foundation of the Padel Group ecosystem, where players,
+              tournaments, academy programs and padel culture continue to grow.
             </p>
+
             <a
               className="btn green"
               href="https://padelgldani.ge/booking/"
@@ -152,6 +209,7 @@ export default function Home() {
       <section className="section partner">
         <div className="partnerLight">
           <h2>Fortune Group</h2>
+
           <p>
             Reliable international partnership, quality manufacturing and
             after-sales support.
@@ -160,6 +218,7 @@ export default function Home() {
 
         <div className="partnerDark">
           <h2>PG Standard</h2>
+
           <p>
             Premium design, precise construction, professional lighting and
             operational expertise.
@@ -169,20 +228,34 @@ export default function Home() {
 
       <section id="contact" className="section">
         <div className="contact">
+
           <div>
-            <span className="eyebrow">Contact</span>
+            <span className="eyebrow">
+              Contact
+            </span>
+
             <h2>Build with us.</h2>
+
             <p>
-              Court construction, club development or partnership opportunities —
-              contact Padel Group.
+              Court construction, club development or partnership opportunities
+              — contact Padel Group.
             </p>
           </div>
 
           <div className="contacts">
-            <a href="tel:+995593958686">+995 593 958 686</a>
-            <a href="mailto:padelgldani@gmail.com">padelgldani@gmail.com</a>
-            <span>Tbilisi, Georgia</span>
+            <a href="tel:+995593958686">
+              +995 593 958 686
+            </a>
+
+            <a href="mailto:padelgldani@gmail.com">
+              padelgldani@gmail.com
+            </a>
+
+            <span>
+              Tbilisi, Georgia
+            </span>
           </div>
+
         </div>
       </section>
 
