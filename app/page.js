@@ -25,7 +25,7 @@ export default function Home() {
         <a className="brand" href="#top">
 
           <img
-            src="/pg-logo.png"
+            src="./pg-logo.png"
             alt="Padel Group"
             className="main-logo"
           />
